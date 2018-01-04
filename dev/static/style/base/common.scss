@@ -1,0 +1,49 @@
+@import "mixin-background";
+@import "mixin-position";
+@import "mixin-gradient";
+
+$ppr : 40/rem;
+// =====================================================
+// html,body
+// =====================================================
+html,body{
+  height:100%;
+  width:100%;
+  background-color: #f3f3f3;
+  font-family: 'PingFang SC','Helvetica Neue',Helvetica,Arial,Verdana,'Hiragino Sans GB','Noto Sans CJK SC','Source Han Sans CN',STHeiti,'Microsoft YaHei','WenQuanYi Micro Hei',SimSun,sans-serif;
+}
+
+.container{
+  height:100%;
+  overflow-y: scroll;
+}
+.text-center{
+  text-align: center;
+}
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float: right;
+}
+.clearfix:before,
+.clearfix:after{
+  content:"";
+  display: block;
+  height: 0;
+  line-height:0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+@mixin background-common($url, $repeat,$width,$height){
+  background-image: $url;
+  background-repeat: $repeat;
+  background-size:$width $height;
+  width: $width;
+  height: $height;
+  display: inline-block;
+}

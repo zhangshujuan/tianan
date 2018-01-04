@@ -1,0 +1,123 @@
+@import "base/common";
+@import "base/header";
+.content{
+  background: #fff;
+  .clearfix{
+    border-bottom: 1px solid #EFEFF4;
+    .col-50{
+      width: 50%;
+      .icon-info {
+        border-bottom: none;
+      }
+      &:last-child{
+        .icon-info {
+          padding: 30/$ppr 0 30/$ppr 40/$ppr;
+        }
+      }
+    }
+  }
+  .icon-info{
+    padding: 30/$ppr 0 30/$ppr 50/$ppr;
+    position: relative;
+    display: -webkit-box;    /*容器为旧伸缩盒*/
+    -webkit-box-align: center; /*设置旧伸缩盒对齐方式*/
+    display: inline-flex;            /*容器为伸缩盒*/
+    align-items: center;  /*纵轴方向上的对齐方式设置为居中*/
+    border-bottom: 1px solid #EFEFF4;
+    width: 100%;
+    .text-info{
+      font-size: 26/$ppr;
+      color: #2F313D;
+      display: inline-block;
+      max-width: 80%;
+      margin-left: 20/$ppr;
+    }
+    .icon_fog_front{
+      @include iconImage('../image/icon_fog_front@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_fog_back{
+      @include iconImage('../image/icon_fog_back@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_lamp_near{
+      @include iconImage('../image/icon_lamp_near@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_lamp_far{
+      @include iconImage('../image/icon_lamp_far@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_turn_left{
+      @include iconImage('../image/icon_turn_left@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_turn_right{
+      @include iconImage('../image/icon_turn_right@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_lamp_small{
+      @include iconImage('../image/icon_lamp_small@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_acc{
+      @include iconImage('../image/icon_acc@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_petrol{
+      @include iconImage('../image/icon_petrol@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_door{
+      @include iconImage('../image/icon_door@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_primary{
+      @include iconImage('../image/icon_primary@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_secondary{
+      @include iconImage('../image/icon_secondary@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_eps{
+      @include iconImage('../image/icon_eps@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_burglarproof{
+      @include iconImage('../image/icon_burglarproof@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_unrecognized {
+      @include iconImage('../image/icon_unrecognized@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_start{
+      @include iconImage('../image/icon_start@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_oil{
+      @include iconImage('../image/icon_oil@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_emission{
+      @include iconImage('../image/icon_emission@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_engine{
+      @include iconImage('../image/icon_engine@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_brake_fluid{
+      @include iconImage('../image/icon_brake_fluid@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_temperature {
+      @include iconImage('../image/icon_temperature@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_battery{
+      @include iconImage('../image/icon_battery@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_abs{
+      @include iconImage('../image/icon_abs@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_airbag{
+      @include iconImage('../image/icon_airbag@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_constant_speed {
+      @include iconImage('../image/icon_constant_speed@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_start_stop{
+      @include iconImage('../image/icon_start_stop@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_esp{
+      @include iconImage('../image/icon_esp@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_esp_off{
+      @include iconImage('../image/icon_esp_off@3x.png', 80/$ppr, 80/$ppr);
+    }
+    .icon_braking {
+      @include iconImage('../image/icon_braking@3x.png', 80/$ppr, 80/$ppr);
+    }
+  }
+}

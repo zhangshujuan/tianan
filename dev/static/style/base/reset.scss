@@ -1,0 +1,140 @@
+@import "mixin-font";
+
+// reset
+// -------------------------------------------------------------------------
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: 0;
+	font-weight: normal;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	border: none;
+	font: inherit;
+	vertical-align: baseline;
+	word-wrap:break-word;
+	font-family: $fontFamily;
+}
+
+ul,
+li,
+ol{
+	list-style: none;
+}
+
+input,
+textarea,
+button{
+	-webkit-appearance:none;
+}
+
+input,
+textarea,
+button{
+	background: transparent;
+	&:-webkit-autofill {
+		-webkit-box-shadow: 0 0 0 1000px #fff inset;
+	}
+	&::-webkit-search-cancel-button {
+		display: none;
+	}
+}
+
+:-moz-placeholder {
+    color: $color999;  
+}
+
+::-moz-placeholder {
+    color: $color999; 
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: $color999;  
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: $color999; 
+}
+
+a{
+	text-decoration: none;
+	tap-highlight-color: rgba(0,0,0,0);
+	focus-ring-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-focus-ring-color: rgba(0, 0, 0, 0);
+	-moz-tap-highlight-color: rgba(0,0,0,0);
+	-moz-focus-ring-color: rgba(0, 0, 0, 0);
+}
+
+img{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+// 
+.clearfix:before,
+.clearfix:after{
+	content:"";
+	display: block;
+	height: 0;
+	line-height:0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+html{
+	font-size: $baseFontSize;
+	background-color: $colorF3;
+}
+html, body{
+	position: relative;
+	height: 100%;
+}
+
+body{
+	overflow: hidden !important;
+	-webkit-overflow-scrolling: touch;
+}
+
+.bg-white{
+	background-color: $colorFFF !important;
+}
+
+.page{
+	position: relative;
+	width: 100%;
+
+	&.page-normal{
+		position: absolute;
+		height: 100%;
+		overflow-x: hidden;
+		overflow-y:auto !important;
+		// -webkit-overflow-scrolling: touch;
+	}
+
+	&.page-room{
+		position: absolute;
+		height: 100%;
+		overflow: hidden;
+	}
+
+}
+
+.y-scroll{
+	overflow-x: hidden;
+	overflow-y:auto !important;
+	-webkit-overflow-scrolling: touch;
+}
+
+.no-scroll{
+	overflow: hidden !important;
+	-webkit-overflow-scrolling: touch;
+}

@@ -1,0 +1,11 @@
+@import "base/common";
+@import "base/header";
+.content{
+  padding: 30/$ppr;
+  font-size: 26/$ppr;
+  color: #2F313D;
+  background: #fff;
+  p{
+    margin-top: 0;
+  }
+}

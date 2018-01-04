@@ -1,0 +1,29 @@
+@mixin translate($x, $y, $z){
+	-webkit-transform: translate3d($x, $y, $z);
+			transform: translate3d($x, $y, $z);
+}
+
+@mixin rotate($deg){
+	-webkit-transform: rotate($deg);
+			transform: rotate($deg);
+}
+@mixin rotateY($deg){
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+	-webkit-transform: perspective(1000px) rotateY($deg);
+			transform: perspective(1000px) rotateY($deg);
+}
+
+@mixin transition($prop, $dur, $easing){
+	@if $prop = transform {
+		-webkit-transition: $prop $dur $easing;
+				transition: $prop $dur $easing;
+	} @else {
+		-webkit-transition: -webkit-transform $dur $easing;
+				transition: 		transform $dur $easing;
+	}
+	
+}
+
+
+
